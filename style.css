@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+header {
+  background-image: url('imgs/image-hero-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50%;
+  margin: 0 0;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin-left: 25px;
+  border-bottom: solid 1px white;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  color: white;
+  padding-top: 4%;
+}
+
+.box-1 {
+  margin: 0 25%;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  height: 185px;
+  color: black;
+  position: relative;
+  bottom: 8%;
+  font-size: 1.1em;
+  padding-top: 3%;
+}

@@ -4,122 +4,74 @@
 }
 
 body {
-  background-color: #d9d9d9;
+  background-color: #f0efef;
 }
 
 header {
-  background-image: url('imgs/image-hero-desktop.jpg');
-  background-size: cover;
+  background-image: url('imgs/image-hero-mobile.jpg');
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50%;
-  margin: 0 0;
+  height: 45%;
+  margin: 0;
 }
 
-ul {
-  display: flex;
-}
-
-li {
-  list-style: none;
-  margin-left: 25px;
-  border-bottom: solid 1px white;
-}
-
-.head {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-around;
+header {
   color: white;
-  padding-top: 4%;
+  font-size: .7em;
+  padding-top: 5%;
+}
+
+header li {
+  display: none;
 }
 
 .box-1 {
-  margin: 0 25%;
+  height: 40%;
   background-color: white;
-  border-radius: 5px;
+  margin: 0 4.5%;
+  border-radius: 10px;
   text-align: center;
-  height: 250px;
-  color: black;
   position: relative;
-  bottom: 11%;
-  font-size: 1.1em;
-  padding-top: 3%;
-  box-shadow: 2px 5px 15px grey;
+  bottom: 90px;
 }
 
-.box-1 h3 {
-  padding-bottom: 1.5em;
-  font-size: 1.3em;
-}
-
-.box-1 .button-1 {
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: #53bab3;
-  color: white;
-  border-radius: 50px;
-  margin-top: 8%;
-  margin-right: 65%;
-  cursor: pointer;
-  border: none;
-  height: 50px;
-}
-
-.button-2 {
-  height: 50px;
-  border-radius: 50px;
-  border: none;
-  padding-left: 30px;
+.box-1 h3{
+font-size: 1.18em;  
 }
 
 .Mastercraft {
-  position: relative;
-  left: 50%;
-  bottom: 8%;
   z-index: 10;
+  position: relative;
+  left: 42%;
+  bottom: 11%;
+}
+
+.text-1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.button-1 {
+  margin-top: 15%;
+  margin-right: 45%;
+  padding: 15px 15px 15px 15px;
+  background-color: #52bab3;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.button-2 {
+  display: none;
 }
 
 .bookmark {
-  z-index: 10;
   position: relative;
-  bottom: 3em;
-  left: 14.9em;
+  bottom: 23%;
+  left :30%;
+  cursor: pointer;
 }
-
-.box-2 {
-  margin: 0 25%;
-  height: 15em;
-  background-color: white;
-  position: relative;
-  bottom: 7%;
-  box-shadow: 5px 5px 3px grey;
-  border-radius: 10px;
-}
-
-.stats {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  justify-content: space-around;
-}
-
-.dollars,
-.brackets,
-.days {
-  flex-direction: column;
-  text-align: left;
-  font-size: 1.2em;
-  border-right: 1px solid rgb(177, 175, 175);
-  margin-top: 10%;
-  padding-right: 20px;
-}
-
-/* .box-3 {
-  margin: 0 25%;
-  height: 50em;
-  background-color: white;
-  position: relative;
-  bottom: 7%;
-} */

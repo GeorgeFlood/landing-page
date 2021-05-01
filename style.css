@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: #f0efef;
+  background-color: whitesmoke;
+  min-height: 100vh;
 }
 
 header {
@@ -14,30 +15,35 @@ header {
   background-repeat: no-repeat;
   height: 45%;
   margin: 0;
-}
-
-header {
   color: white;
   font-size: .7em;
   padding-top: 5%;
 }
 
-header li {
+
+.head {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
   display: none;
+  visibility: hidden;
 }
 
 .box-1 {
-  height: 40%;
+  height: 35%;
   background-color: white;
   margin: 0 4.5%;
   border-radius: 10px;
   text-align: center;
   position: relative;
-  bottom: 90px;
+  bottom: 5.625em;
+  box-shadow: 5px 5px 10px rgb(167, 167, 167);
 }
 
-.box-1 h3{
-font-size: 1.18em;  
+.box-1 h3 {
+  font-size: 1.18em;
 }
 
 .Mastercraft {
@@ -51,11 +57,12 @@ font-size: 1.18em;
   display: flex;
   flex-direction: column;
   padding-top: 50px;
+  margin: 0 0.7%;
 }
 
 .button-1 {
-  margin-top: 15%;
-  margin-right: 45%;
+  display: inline;
+  margin-right: 44%;
   padding: 15px 15px 15px 15px;
   background-color: #52bab3;
   color: white;
@@ -63,15 +70,263 @@ font-size: 1.18em;
   border-radius: 15px;
   font-size: 1em;
   cursor: pointer;
+  margin-top: 40px;
 }
 
 .button-2 {
   display: none;
 }
 
+
 .bookmark {
   position: relative;
-  bottom: 23%;
-  left :30%;
+  bottom: 3.5em;
+  left: 6.9em;
   cursor: pointer;
+}
+
+.box-2 {
+  height: 45%;
+  background-color: white;
+  margin: 0 4.5%;
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+  bottom: 10%;
+  box-shadow: 5px 5px 10px rgb(167, 167, 167);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.dollars,
+.brackets,
+.days {
+  padding-top: 20px;
+  border-bottom: 2px solid rgba(148, 147, 147, .2);
+  margin: 0 30%;
+  padding-bottom: 5px
+}
+
+.dollars p,
+.brackets p,
+.days p {
+  font-size: 12px;
+  color: grey;
+}
+
+.box-3 {
+  position: relative;
+  margin: 0 4.5%;
+  text-align: left;
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 10px;
+  box-shadow: 5px 5px 10px rgb(167, 167, 167);
+  bottom: 4%;
+  height: 85.5em;
+}
+
+.about-project {
+  margin: 0 4.5%;
+}
+
+.about-project h3 {
+  color: black;
+  padding-bottom: 6%;
+  font-size: 1.4em;
+}
+
+.about-project p {
+  color: rgba(148, 147, 147, .9);
+  text-align: left;
+}
+
+.bamboo-stand,
+.black-edition,
+.Mahogany {
+  margin: 0 4.5%;
+  border: 2.3px solid rgba(23, 97, 182, 0.3);
+  border-radius: 5px;
+  margin-top: 50px;
+  height: 300px;
+}
+
+.bamboo-stand h4,
+.black-edition h4,
+.Mahogany h4 {
+  margin: auto 2%;
+  color: black;
+  padding-top: 10px;
+  font-size: 21px;
+}
+
+.bamboo-stand h5,
+.black-edition h5,
+.Mahogany h5 {
+  margin: auto 2%;
+  color: #52bab3;
+  padding: 15px 0px 15px 0px;
+  font-size: 18px;
+}
+
+.bamboo-stand p,
+.black-edition p,
+.Mahogany p {
+  margin: auto 2%;
+  color: rgba(148, 147, 147, .9);
+  padding-bottom: 10px;
+}
+
+.bamboo-stand h3,
+.black-edition h3,
+.Mahogany h3 {
+  margin: auto 2%;
+  font-size: 28px;
+  color: black;
+}
+
+.left {
+  color: #52bab3;
+  font-size: 20px;
+}
+
+.bamboo-stand button,
+.black-edition button,
+.Mahogany button {
+  margin: 0 15%;
+  margin-top: 20px;
+  color: white;
+  background-color: #52bab3;
+  height: 40px;
+  width: 50%;
+  border: none;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: rgba(83, 186, 179, .7);
+}
+
+button:active {
+  background-color: rgba(47, 130, 163, 0.7)
+}
+
+button {
+  cursor: pointer;
+}
+
+@media(min-width: 411px) {
+
+  header {
+    margin-top: -22;
+    padding-top: 60px;
+    font-size: .9em;
+  }
+
+  .box-1 {
+    bottom: 112px;
+  }
+
+  .text-1 {
+    font-size: 21px;
+  }
+
+  .bookmark {
+    left: 9.3em;
+  }
+
+  .stats {
+    font-size: 19px;
+  }
+
+  .stats p {
+    font-size: 16px;
+    padding-top: 8px;
+  }
+}
+
+/* closing 411px media  */
+
+@media(min-width: 1023px) {
+  header {
+    background-image: url('imgs/image-hero-desktop.jpg');
+  }
+
+  .head svg {
+    visibility: hidden;
+  }
+
+  header ul {
+    display: flex;
+    visibility: visible;
+  }
+
+  header li {
+    padding: 0px 30 0px 30px;
+    list-style: none;
+    font-size: 17px;
+    border-bottom: 1.2px solid whitesmoke;
+  }
+
+  .Mastercraft {
+    left: 49%;
+    bottom: 11%;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    margin: 0 25%;
+  }
+
+  .box-2 {
+    height: 33%;
+  }
+
+  .button-2 {
+    display: block;
+    height: 25%;
+    background-color: rgb(30, 131, 145);
+    border-radius: 10px;
+    text-align: center;
+
+  }
+
+  .top-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bookmark {
+    display: none;
+  }
+
+  .dollars,
+  .brackets,
+  .days {
+    padding-top: 20px;
+    margin: 0 0%;
+    padding-bottom: 5px;
+    text-align: left;
+    border-bottom: none;
+    padding-left: 60px;
+    margin-top: 10%;
+    margin-right: 10%;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 2%;
+  }
+
+  .days,
+  .brackets {
+    border-left: 1px solid rgba(148, 147, 147, .3);
+  }
+
 }

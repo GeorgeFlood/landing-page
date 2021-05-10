@@ -49,8 +49,8 @@ header ul {
 .Mastercraft {
   z-index: 10;
   position: relative;
-  left: 42%;
-  bottom: 11%;
+  left: 45%;
+  bottom: 10.5%;
 }
 
 .text-1 {
@@ -241,6 +241,36 @@ button {
   cursor: pointer;
 }
 
+@media(min-width: 375px) {
+
+
+  header {
+    background-image: url('imgs/image-hero-mobile.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -9%;
+    color: white;
+    font-size: .7em;
+    padding-top: 15%;
+  }
+
+  .bar-2 {
+    top: 2.4em;
+  }
+
+  .box-1 {
+    top: -110px;
+    height: 30%;
+  }
+
+  .box-2 {
+    margin-top: 7%;
+  }
+
+
+}
+
 @media(min-width: 411px) {
 
   header {
@@ -251,6 +281,7 @@ button {
 
   .box-1 {
     bottom: 112px;
+    height: 34.5%;
   }
 
   .text-1 {
@@ -266,7 +297,7 @@ button {
   }
 
   .bar-2 {
-    top: 10.8%;
+    top: 10.2%;
   }
 
   .stats p {
@@ -275,9 +306,15 @@ button {
   }
 }
 
+@media(min-width: 414px) {
+  .bar-2 {
+    top: 2.1em;
+  }
+}
+
 /* closing 411px media  */
 
-@media(min-width: 1023px) {
+@media(min-width: 1024px) {
   header {
     background-image: url('imgs/image-hero-desktop.jpg');
   }
@@ -301,6 +338,10 @@ button {
   .Mastercraft {
     left: 49%;
     bottom: 11%;
+  }
+
+  .box-1 {
+    height: 33%;
   }
 
   .box-1,
